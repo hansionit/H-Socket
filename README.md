@@ -3,6 +3,7 @@
 
 
 
+
 * 获取HTcp实例
 
 		HTcpClient hTcpClient = HTcpClient.getInstance(new AddressInfo(ip, port));
@@ -21,8 +22,8 @@
              hTcpClient.config(new ConnConfig.Builder()
                 //.setStickPackageHelper(stickHelper)//粘包
                 // .setIsReconnect(true)   //自动重连
-                .setCharsetName("GBK")  //设置编码格式 或 UTF-8 ，默认为GBK
-                .create());
+                .setCharsetName("GBK")  //设置编码格式 或 UTF-8 默认为GBK
+                .create());
         	 hTcpClient.connect();
 
 
@@ -56,7 +57,7 @@
 * 发送数据（支持字符串与字节数组）
 
      	hTcpClient.sendMsg("连接成功");
-	hTcpClient.sendMsg(bytes);
+	 	hTcpClient.sendMsg(bytes);
 
 
 
