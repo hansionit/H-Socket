@@ -3,6 +3,8 @@
 
 
 
+> 可以直接使用libs中的jar包  h_socket.jar
+
 
 * 获取HTcp实例
 
